@@ -1,20 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:timer/features/main/main_screen.dart';
+import 'package:timer/features/timer/screens/timer_screen.dart';
 
 void main() {
-  runApp(const MainApp());
+  runApp(const MyWidget());
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+class MyWidget extends StatefulWidget {
+  const MyWidget({super.key});
 
   @override
+  State<MyWidget> createState() => _MyWidgetState();
+}
+
+class _MyWidgetState extends State<MyWidget> {
+  @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
-    );
+    return const MaterialApp(home: MainScreen());
   }
 }
