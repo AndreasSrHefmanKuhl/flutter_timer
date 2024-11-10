@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:timer/features/main/main_screen.dart';
-import 'package:timer/features/timer/screens/timer_screen.dart';
 
 void main() {
   runApp(const MyWidget());
